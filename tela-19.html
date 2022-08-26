@@ -1,0 +1,119 @@
+<div style="height: 60px; width: 100%; background-color: #a9e5ea;">
+    <img style="height: 60px; width: 460px; position: absolute; right: 0px;" src="recursos/imgs/H1.png">
+    <p style="position: absolute;color: #294666;margin-left: 43px;margin-top: 26px;font-size: 12px;">TÓPICO<strong>
+            1</strong></p>
+    <p
+        style="position: absolute;font: normal normal normal 11px/15px Poppins;letter-spacing: 0px;color: #294666;margin-left: 112px;margin-top: 25px;width: 400px;">
+        FUNDAMENTOS DA APS JUNTO A POPULAÇÕES VULNERÁVEIS</p>
+</div>
+<div style="margin-top: 60px;margin-left: 41px;width: 808px;">
+    <p style="margin-top: 50px;">Para pensarmos a aplicação do conceito de vulnerabilidade à gestão na APS, é
+        importante
+        considerar que a vulnerabilidade
+        não tem um caráter permanente, ou seja, as pessoas não são vulneráveis, mas estão vulneráveis.</p>
+    <p>Nesse sentido, podemos
+        descrever três características essenciais das populações em situação de vulnerabilidade, segundo Ayres et
+        al.
+        (2011).</p>
+    <p>Clique nas imagens e conheça essas características.</p>
+    <div class="animate__animated animate__backInRight"
+        style="display: flex;align-items: flex-end;margin-top: 54px;margin-left: 176px;justify-content: space-between;width: 450px;">
+        <div id="botao_1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+            <img src="recursos/imgs/img.1-slide-18.svg" style="width: 67px;">
+            <p style="font: normal normal bold 12px/15px Poppins;color: #2F5579;">Cadeirante</p>
+        </div>
+        <div id="botao_2" style="display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+            <img src="recursos/imgs/img.2-slide-18.svg" style="width: 80px;">
+            <p style="font: normal normal bold 12px/15px Poppins;color: #2F5579;">Idoso</p>
+        </div>
+        <div id="botao_3" style="display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+            <img src="recursos/imgs/img.3-slide-18.svg"
+                style="/* width: 80px; */margin-top: -130px;margin-left: -80px;">
+            <p style="font: normal normal bold 12px/15px Poppins;color: #2F5579;">Indígena</p>
+        </div>
+    </div>
+    <div>
+        <div class="jan" id="janela_1" style=" display: none;">
+            <div
+                style="width: 767px;height: 103px;background: #057CF9 0% 0% no-repeat padding-box;border-radius: 10px;display: flex;position: absolute;top: 190px;left: 70px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 689px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="width: 718px;font: normal normal normal 14px/18px Poppins;color: #FFFFFF;">
+                        Vulnerabilidade de um grupo populacional <b>não é binária</b>: a vulnerabilidade possui
+                        múltiplas
+                        dimensões. Sendo assim, é
+                        possível alguém estar vulnerável a alguns agravos a saúde e a outros não.</p>
+                </div>
+                <p
+                    style="font: normal normal normal 14px/18px Poppins;letter-spacing: 0px;color: white;position: absolute;top: -9px;left: 750px;">
+                    x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_2" style=" display: none;">
+            <div
+                style="width: 767px;height: 158px;background: #FE725E 0% 0% no-repeat padding-box;border-radius: 10px;display: flex;position: absolute;top: 190px;left: 70px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 689px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="width: 720px;color: #FFFFFF;">
+                        A vulnerabilidade de um grupo populacional <b>não é unitária</b>: existem gradações de
+                        vulnerabilidade. Uma análise da
+                        vulnerabilidade implica ir além de dizer se alguém está ou não está vulnerável, é considerar
+                        os
+                        diferentes graus da
+                        situação apresentada.</p>
+                </div>
+                <p
+                    style="font: normal normal normal 14px/18px Poppins;letter-spacing: 0px;color: white;position: absolute;top: -9px;left: 750px;">
+                    x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_3" style=" display: none;">
+            <div
+                style="width: 767px;height: 158px;background: #FFC830 0% 0% no-repeat padding-box;border-radius: 10px;display: flex;position: absolute;top: 190px;left: 70px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 689px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="width: 720px;color: #FFFFFF;">
+                        A vulnerabilidade de um grupo social <b>não é estável</b>: as dimensões da vulnerabilidade
+                        mudam
+                        constantemente em função de
+                        alteração nos componentes individuais, sociais ou programáticos da situação de
+                        vulnerabilidade.
+                    </p>
+                </div>
+                <p
+                    style="font: normal normal normal 14px/18px Poppins;letter-spacing: 0px;color: white;position: absolute;top: -9px;left: 750px;">
+                    x</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="width: 1008px;height: 19px;display: flex;background-color: #CEE4F1;">
+    <div style="margin-top: -8px;display: flex;margin-left: 42px;">
+        <p style="color: #294666;font-size: 11px;">GESTÃO DA APS E POPULAÇÕES VULNERÁVEIS</p>
+    </div>
+</footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
